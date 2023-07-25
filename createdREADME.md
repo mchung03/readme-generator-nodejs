@@ -31,5 +31,5 @@
     
 
   ## Questions
-  Github link: (https://github.com/a)
+  Github link: (https://github.com/a) <br>
   For any additional questions, please email me at a

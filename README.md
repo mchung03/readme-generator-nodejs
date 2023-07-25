@@ -10,8 +10,8 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Technologies Used](#technologies-used)
 - [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
@@ -22,11 +22,12 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+![alt text]
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+## Technologies Used
+- GitHub License API (https://api.github.com/licenses)
+- badge-maker npm (https://www.npmjs.com/package/badge-maker?activeTab=readme)
+- Node.js (https://nodejs.org/en)
 
 ## Credits
 Tutor Joem Casusi
