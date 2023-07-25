@@ -2,6 +2,10 @@
 const generateMarkdown = require(`./utils/generateMarkdown`)
 const inquirer = require("inquirer");
 const fs = require('fs');
+const licenseJS = require('./license')
+const licenses = licenseJS.map(license => {
+    return license.name
+})
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -12,12 +16,12 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is a description of the project?',
+        message: 'What is a description of the project? What, why and how?',
         name: 'description',
     },
     {
         type: 'input',
-        message: 'Any installation instructions?',
+        message: 'Installation instructions. How do users use your project? Type N/A if not applicable.',
         name: 'installation',
     },
     {
@@ -27,19 +31,19 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What are some contribution guidelines?',
+        message: 'What are some contribution guidelines? Type N/A if not applicable.',
         name: 'contribution',
     },
     {
         type: 'input',
-        message: 'Any test instructions?',
+        message: 'Any test instructions? Type N/A if not applicable.',
         name: 'test',
     },
     {
-        type: 'list',
+        type: 'checkbox',
         message: 'Select your license',
         name: 'license',
-        choices: ["Apache License 2.0", "GNU General Public License v.3.0", "MIT License", 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"]
+        choices: licenses
     },
     {
         type: 'input',
