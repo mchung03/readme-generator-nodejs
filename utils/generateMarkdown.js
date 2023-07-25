@@ -25,7 +25,7 @@ function renderLicenseLink(license) {
     const licenseLink = licenseJS.filter(obj => {
         return obj.key == license
     })
-    const link = licenseLink[0].url
+    const link = licenseLink[0].html_url
     return link
   } else {
     return ""
