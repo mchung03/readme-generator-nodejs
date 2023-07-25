@@ -24,9 +24,10 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ![npms](./images/require.PNG)
 
-This contains all the npms installed and functions used that may be located in a different file.
+This contains all the npms installed and functions used that may be located in a different file. license.js was imported from the online API so that it can be accessible offline.
 
 ![question array](./images/questions.PNG)
+
 This is an array of questions as objects, including the type, message presented to the user, and a title, later referenced in the template literal. The checkbox type for license allows users to check none or multiple choices.
 
 ![initialize function](./images/initialize.PNG)
