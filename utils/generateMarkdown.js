@@ -23,9 +23,9 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if(license.length > 0) {
     const licenseLink = licenseJS.filter(obj => {
-        return obj.name == license
+        return obj.key == license
     })
-    const link = licenseLink[0].html_url
+    const link = licenseLink[0].url
     return link
   } else {
     return ""

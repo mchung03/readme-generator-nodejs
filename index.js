@@ -4,7 +4,7 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 const licenseJS = require('./license')
 const licenses = licenseJS.map(license => {
-    return license.name
+    return license.key
 })
 
 // TODO: Create an array of questions for user input
@@ -16,7 +16,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is a description of the project? What, why and how?',
+        message: 'What is a description of the project? What, why and how did you make it?',
         name: 'description',
     },
     {
