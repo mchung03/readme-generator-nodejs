@@ -4,6 +4,8 @@
 
 The README generator was created to create a README and plugs the user input into a template. This solves the problem of having to continously write out all the subheading by easily creating a README for projects. I learned to use JavaScript and template literals to have the function run in NodeJS. 
 
+Video demonstration: (https://drive.google.com/file/d/1OtaERNTTFljHcGbJ12rWZEmxeuMVjj6Q/view?usp=sharing)
+
 ## Table of Contents (Optional)
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
